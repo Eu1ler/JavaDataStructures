@@ -1,0 +1,61 @@
+/*
+You must include the array and arraylist libraries to be able to use them.
+ */
+import java.util.ArrayList;
+import java.util.Arrays;
+
+public class Main {
+    public static void main(String[] args) {
+    /*
+    Here, we have an array of type string size 4.
+    I individually assigned each element.
+     */
+    String[] Fruits = new String[4];
+    Fruits[0]= "Apples";
+    Fruits[1]= "Oranges";
+    Fruits[2]= "Bananas";
+    Fruits[3]= "Cherries";
+        System.out.println(Fruits[2]);
+
+    /*
+    Making an array list allows for the addition of new elements into the array.add
+    */
+    ArrayList FruitList= new ArrayList();
+    FruitList.add("Mango");
+    FruitList.add("Kiwi");
+    FruitList.add("Melons");
+        System.out.println(FruitList);
+    /*
+    You can also remove items from the
+    */
+    FruitList.remove("Mango");
+    FruitList.clear();
+    /*
+    This is a simple static array that stores the phone numbers of my family:
+     */
+        String [] familyPhoneNumbers = {"Oscar: 209-622-5207", "Cesar: 209-809-6010", "Mom:209-688-9769",
+                "Dad: 925-980-0848"};
+        System.out.println(Arrays.toString(familyPhoneNumbers));
+    /*
+    This another type of array with numbers.
+    I use a for loop to print the array.
+     */
+    String[] months= new String[12];
+        months[0]="January";
+        months[1]="February";
+        months[2]="March";
+        months[3]="April";
+        months[4]="May";
+        months[5]="June";
+        months[6]="July";
+        months[7]="August";
+        months[8]="September";
+        months[9]="October";
+        months[10]="November";
+        months[11]="December";
+        for (int i=0; i<=12; i++){
+            System.out.println(Arrays.toString(months));
+       }
+
+    }
+}
