@@ -1,0 +1,39 @@
+import java.util.LinkedList;
+
+public class Main {
+    public static void main(String[] args) {
+       //In this tutorial I'm learning linked lists.
+        //After calling the linked list ny name, use the
+        //dot operator to call on more methods.
+
+        //Adding to the link list:
+        LinkedList MyLinkedList = new LinkedList();
+        MyLinkedList.add("Rob");
+        MyLinkedList.add("Alex");
+        MyLinkedList.add("Oscar");
+
+        /*//this line of code removes from the head:
+        MyLinkedList.remove();
+        //we can also clear everybody from the list:
+        MyLinkedList.clear();
+        //we can removed
+        //we can print the whole list out:
+        System.out.println(MyLinkedList);
+        */
+        //we can also print the position of the link list:
+        System.out.println(MyLinkedList.getFirst());
+
+        //You can also make a specific type of linked lists:
+        LinkedList<Integer> MyIntLinkedList= new LinkedList<Integer>();
+        //adding to my linked list:
+        MyIntLinkedList.add(0);
+        MyIntLinkedList.add(1);
+        MyIntLinkedList.add(2);
+        MyIntLinkedList.add(3);
+        System.out.println(MyIntLinkedList.getLast());
+
+
+
+
+    }
+}
